@@ -7,6 +7,9 @@ const routes = require('./routes')
 class App {
   constructor () {
     this.express = express()
+
+    this.middlewares()
+    this.routes()
   }
 
   static async start () {
@@ -23,7 +26,7 @@ class App {
   }
 
   routes () {
-    this.express.use('/api/', routes)
+    this.express.use('/api', routes)
   }
 }
 
