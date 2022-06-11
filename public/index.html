@@ -11,27 +11,51 @@
   <body>
     
 
-      <main>
-        <header>
-          <h1>Sistema de cadastro</h1>
-        </header>
-        <form class="form-cadastro" action="http://localhost:3000/api/cadastrar" method="post">
-          <div class="form">
-          <input type="text" class="name" name="user" placeholder="Name">
-          </div> 
+        <main class="main">
 
-          <div class="form">
-            <input type="email" class="email" name="email" placeholder="Email">
+          <div class="container-login">
+            
           </div>
 
-          <div class="form">
-            <input type="password" class="password" name="password" placeholder="Password">
-          </div>
+          <div class="container-cadastro">
 
-          <button type="submit" class="cadastrar">Cadastrar</button>
-        </form>
-      </main>
+            <header>
+              <div class="user-icon">
+                <i class="fa-solid fa-circle-user"></i>
+              </div>
+              <h1>Create account!</h1>
+            </header>
+
+            <div class="formulario">
+              <form id="form-cadastro" action="http://localhost:3000/api/cadastrar" method="post">
+
+                <div class="form">
+                
+                <input type="text" id="name" name="user" placeholder="Name">
+                </div> 
+  
+                <div class="form">
+                 
+                  <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+  
+                <div class="form">
+                 
+                  <input type="password" id="password" name="password" placeholder="Password">
+                  
+                </div>
+  
+                <div class="button">
+                  <button type="submit" class="cadastrar">Create <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        
+        </main>
 
       <script src="js/sricpt.js" ></script>
+      <script src="https://kit.fontawesome.com/f5210e486a.js" crossorigin="anonymous"></script>
   </body>
   </html>
