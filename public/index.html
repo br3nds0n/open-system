@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="image/users-solid (2).svg" type="image/x-icon">
+    <title>Cadastro</title>
   </head>
 
   <body>
@@ -30,27 +31,30 @@
               <form id="form-cadastro" action="http://localhost:3000/api/cadastrar" method="post">
 
                 <div class="form">
-                
-                <input type="text" id="name" name="user" placeholder="Name">
+                  <label >Username</label>  
+                    <input type="text" id="name" name="user" placeholder="ex: exemplo ">
+                    <i class="fa-solid fa-user "></i>
                 </div> 
   
                 <div class="form">
-                 
-                  <input type="email" id="email" name="email" placeholder="Email">
+                  <label>Email</label> 
+                  <input type="email" id="email" name="email" placeholder="ex: exemplo@gmail.com">
+                  <i class="fa-solid fa-envelope"></i>
                 </div>
   
                 <div class="form">
-                 
-                  <input type="password" id="password" name="password" placeholder="Password">
-                  
+                  <label >Password</label> 
+                   <input type="password" id="password" name="password" placeholder="password">
+                   <i class="fa-solid fa-lock"></i>
                 </div>
   
                 <div class="button">
-                  <button type="submit" class="cadastrar">Create <i class="fa-solid fa-arrow-right"></i></button>
+                 <button type="submit"  class="cadastrar"> Create <i class="fa-solid fa-arrow-right"></i></button> 
                 </div>
               </form>
             </div>
 
+          
           </div>
         
         </main>
