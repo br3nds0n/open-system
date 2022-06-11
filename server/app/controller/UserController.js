@@ -6,9 +6,9 @@ class UserController {
       const video = req.body
       const result = await UserModel.create(video)
 
-      return res.status(201).json(result)
+      res.status(201).json(result)
     } catch (error) {
-      return res.status(400).json({
+      res.status(400).json({
         details: {
           name: 'bad request',
           description: error.message
