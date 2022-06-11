@@ -11,5 +11,7 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   rules: {
+    'no-unused-vars': 'off',
+    'dot-notation': 'off'
   }
 }

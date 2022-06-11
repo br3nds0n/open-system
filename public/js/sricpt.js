@@ -11,7 +11,7 @@ function cadastrar (event) {
 
   let erro = false
 
-  const inputUser = document.forms['form-cadastro'].name
+  const inputUser = document.forms['form-cadastro']['name']
 
   if (!inputUser.value) {
     erro = true
@@ -20,7 +20,7 @@ function cadastrar (event) {
     name.classList.remove('inputErro')
   }
 
-  const inputEmail = document.forms['form-cadastro'].email
+  const inputEmail = document.forms['form-cadastro']['email']
 
   if (!inputEmail.value) {
     erro = true
@@ -29,7 +29,7 @@ function cadastrar (event) {
     email.classList.remove('inputErro')
   }
 
-  const inputPassword = document.forms['form-cadastro'].password
+  const inputPassword = document.forms['form-cadastro']['password']
 
   if (!inputPassword.value) {
     erro = true
