@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+    
+
+      <main>
+        <header>
+          <h1>Sistema de cadastro</h1>
+        </header>
+        <form class="form-cadastro" action="http://localhost:3000/api/cadastrar" method="post">
+          <div class="form">
+          <input type="text" class="name" name="user" placeholder="Name">
+          </div> 
+
+          <div class="form">
+            <input type="email" class="email" name="email" placeholder="Email">
+          </div>
+
+          <div class="form">
+            <input type="password" class="password" name="password" placeholder="Password">
+          </div>
+
+          <button type="submit" class="cadastrar">Cadastrar</button>
+        </form>
+      </main>
+
+      <script src="js/sricpt.js" ></script>
+  </body>
+  </html>
