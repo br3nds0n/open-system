@@ -16,19 +16,20 @@ height: 510px;
     width: 200px;
     height: 200px;
     margin: 0px 30px 0px 0px;
+    display: none;
 }
 
 .main .container-cadastro{
     width: 300px;
     height: 420px;
-    background: rgb(255,0,234);
-    background: linear-gradient(306deg, rgba(255,0,234,1) 19%, rgba(169,0,255,1) 76%);
+    background: rgb(0,247,255);
+    background: linear-gradient(318deg, rgba(0,247,255,1) 43%, rgba(0,114,255,1) 63%);
     border-radius: 10px;
 }
 
 .main .container-cadastro header{
     text-align: center;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 20px 0px;
     color: #ffffff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -45,7 +46,8 @@ height: 510px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 230px;
+    margin: 0px 0px 35px 0px;
     
 }
 
@@ -62,13 +64,16 @@ height: 510px;
 .main .container-cadastro .formulario #form-cadastro .form {
    display: flex;
    flex-direction: column;
+   position: relative;
 
 }
 
 
 .main .container-cadastro .formulario #form-cadastro .form label{
-   
-font-size: 15px;
+  color: #ffffffc9;
+  font-size: 15px;
+  margin: 0px 0px 0px 5px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
  
 
@@ -79,30 +84,40 @@ font-size: 15px;
     height: 30px;
     padding: 0px 0px 0px 5px;
     outline: none;
+    
 
   
 }
 
 
 .main .container-cadastro .formulario #form-cadastro .button button{
-  padding: 5px 40px 5px 40px;
+  padding: 5px 60px 5px 60px;
+  margin: 20px 0px 0px 0px;
   font-size: 1em;
   border-radius: 5px;
   border: none;
-  background-color: #ffffff83;
+  background-color: #ffffff;
   transition: 500ms;
   font-weight:580;
-  color: #141414ab;
+  color: #000000bd;
   cursor: pointer;
 }
 
 
 .main .container-cadastro .formulario #form-cadastro .button button:hover{
-   background-color: #ffffff;
+   background-color: #ffffffc0;
    color: #141414;
    transition: 500ms;
   }
-  
+
 .inputErro{
-    color: red;
+    border: 1px solid red;
+    
+}
+
+.fa-user, .fa-envelope, .fa-lock{
+    position: absolute;
+    top: 37px;
+    left: 235px;
+    color: #d1bebe;
 }

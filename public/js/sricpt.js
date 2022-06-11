@@ -5,6 +5,7 @@ formulario.addEventListener('submit', cadastrar)
 
 function cadastrar (event) {
   event.preventDefault()
+
   const name = document.getElementById('name')
   const email = document.getElementById('email')
   const password = document.getElementById('password')
@@ -36,5 +37,10 @@ function cadastrar (event) {
     password.classList.add('inputErro')
   } else {
     password.classList.remove('inputErro')
+  }
+
+  if (!erro) {
+    formulario.submit()
+    window.alert('usuário cadastrado')
   }
 }
