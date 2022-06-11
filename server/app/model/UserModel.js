@@ -15,6 +15,6 @@ const SCHEMA = new mongoose.Schema({
   }
 })
 
-const VIDEO = mongoose.model('Video', SCHEMA)
+const user = mongoose.model('users', SCHEMA)
 
-module.exports = VIDEO
+module.exports = user
